@@ -1,1 +1,160 @@
-ia
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Eliminación de Datos - EPIS Gestión</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f6f8;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #001f3f; /* Azul EPIS */
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #001f3f;
+            margin: 0;
+            font-size: 24px;
+        }
+        .subtitle {
+            color: #d4af37; /* Dorado */
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        h2 {
+            color: #003366;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        .steps-box {
+            background-color: #e8f4fd;
+            border-left: 5px solid #2196F3;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .data-table th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.85em;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Solicitud de Eliminación de Datos</h1>
+        <div class="subtitle">EPIS Gestión (Administradores y Jurados)</div>
+    </div>
+    
+    <p>De acuerdo con las políticas de datos de usuario de Google Play, proporcionamos a los usuarios de la aplicación <strong>EPIS Gestión de Concursos</strong> un mecanismo claro para solicitar la eliminación de su cuenta y los datos asociados.</p>
+
+    <div class="warning-box">
+        <strong>Nota para Docentes y Personal Administrativo:</strong><br>
+        Esta solicitud eliminará sus credenciales de acceso a la aplicación móvil y sus datos de perfil personal. Sin embargo, los registros de las acciones académicas realizadas (calificaciones emitidas, concursos creados) se conservarán por motivos de auditoría institucional.
+    </div>
+
+    <h2>¿Cómo solicitar la eliminación de mi cuenta?</h2>
+    <p>Para procesar la baja de una cuenta de Administrador o Jurado, siga estos pasos:</p>
+
+    <div class="steps-box">
+        <ol>
+            <li>Envíe un correo electrónico a: <a href="mailto:michaelladera2004@gmail.com"><strong>michaelladera2004@gmail.com</strong></a></li>
+            <li>En el <strong>Asunto</strong> escriba: <code>ELIMINAR CUENTA GESTIÓN - [Su Nombre]</code>.</li>
+            <li>En el cuerpo del mensaje, especifique el correo electrónico registrado en la app.</li>
+        </ol>
+        <p><em>La solicitud será procesada en un plazo de 7 días hábiles. Recibirá una confirmación cuando sus credenciales de acceso hayan sido revocadas.</em></p>
+    </div>
+
+    <h2>Política de Retención y Eliminación</h2>
+    <p>Al procesar su solicitud, aplicaremos las siguientes acciones sobre sus datos:</p>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Tipo de Dato</th>
+                <th>Acción</th>
+                <th>Justificación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cuenta de Acceso</strong><br>(Email, Contraseña, ID de Usuario)</td>
+                <td><strong>ELIMINACIÓN TOTAL</strong></td>
+                <td>Se eliminará su capacidad de iniciar sesión en el sistema. Sus credenciales serán borradas de Firebase Auth.</td>
+            </tr>
+            <tr>
+                <td><strong>Perfil Personal</strong><br>(Foto de perfil, número telefónico)</td>
+                <td><strong>ELIMINACIÓN TOTAL</strong></td>
+                <td>Datos personales no esenciales que serán borrados permanentemente.</td>
+            </tr>
+            <tr>
+                <td><strong>Evaluaciones y Puntajes Emitidos</strong><br>(Solo Jurados)</td>
+                <td><strong>RETENCIÓN OBLIGATORIA</strong></td>
+                <td>Las calificaciones que usted otorgó a los proyectos se mantendrán en el sistema. Esto es necesario para la <strong>integridad del concurso</strong> y para responder a posibles reclamos futuros sobre los resultados.</td>
+            </tr>
+            <tr>
+                <td><strong>Configuraciones de Concurso</strong><br>(Solo Administradores)</td>
+                <td><strong>RETENCIÓN OBLIGATORIA</strong></td>
+                <td>Los concursos, cronogramas y categorías creados por usted son propiedad institucional y no se eliminarán para no afectar a los participantes activos.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <p>Escuela Profesional de Ingeniería de Sistemas - Universidad Privada de Tacna</p>
+        <p>Campus Capanique, Av. Jorge Basadre Grohmann s/n, Tacna, Perú</p>
+        <p><a href="mailto:michaelladera2004@gmail.com">michaelladera2004@gmail.com</a></p>
+    </div>
+</div>
+
+</body>
+</html>
