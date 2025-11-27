@@ -1,0 +1,1 @@
+# ADMIN_APLICATIVOENCARGADO-SeguridadDatos
